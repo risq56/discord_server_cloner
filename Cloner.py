@@ -1,16 +1,16 @@
-mytitle = "forked by risq from a deleted repo"
+mytitle = "made by risq"
 from os import system
 system("title "+mytitle)
 import psutil
 from pypresence import Presence
 import time
 import sys
-client_id = '891955385903226880'
-RPC = Presence(client_id,pipe=0)
+client_id = '1057279162785747015'
+RPC = Presence(client_id,pipe=0) 
 RPC.connect()
 start_time=time.time()
-RPC.update(start=start_time, state=f"Cloning a server!",large_image="lua", large_text="Made byMade by risq",
-            small_image="me", small_text="https://discord.gg/Fg5fekmpKC",buttons=[{"label": "Join Server", "url": "https://discord.gg/Fg5fekmpKC"}])
+RPC.update(start=start_time, state=f"Cloning a server!",large_image="logo", large_text="Made by risq",
+            small_image="img", small_text="https://discord.gg/ngcsuUEd")#,buttons=[{"label": "aaaaaaaa", "url": "https://youtube.com"},{"label": "aaaaaaaa", "url": "https://youtube.com"}])
 import discord
 import asyncio
 import colorama
@@ -55,13 +55,21 @@ async def on_ready():
     print(f"Logged In as : {client.user}")
     print("Cloning Server")
     guild_from = client.get_guild(int(input_guild_id))
+    print("1")
     guild_to = client.get_guild(int(output_guild_id))
+    print("2")
     await Clone.guild_edit(guild_to, guild_from)
+    print("3")
     await Clone.roles_delete(guild_to)
+    print("4")
     await Clone.channels_delete(guild_to)
+    print("5")
     await Clone.roles_create(guild_to, guild_from)
+    print("6")
     await Clone.categories_create(guild_to, guild_from)
+    print("7")
     await Clone.channels_create(guild_to, guild_from)
+    print("8")
     print(f"""{Fore.GREEN}
 
  ██████╗ ██████╗ ███╗   ███╗██████╗ ██╗     ███████╗████████╗███████╗██████╗ 

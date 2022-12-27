@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/94531396/143767601-3143bed9-2dbf-41af-b08b-2542220b4b53.png)
+![image](https://media.discordapp.net/attachments/1055209052805795891/1057301547232546816/image.png)
 
 Server Cloner is a simple `python` app that lets you easily clone other Discord servers by pasting the server / guild ID into this program. The bot will do everything else for you. This can be ran on a bot account (recommended way) or if the bot is not on the server you want to clone, you can use a user token.
 
